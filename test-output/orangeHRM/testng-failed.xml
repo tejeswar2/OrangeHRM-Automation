@@ -7,27 +7,10 @@
         <methods>
           <include name="dashboardDependencyDemo"/>
           <include name="tearDown"/>
-          <include name="testInfo"/>
           <include name="launch"/>
           <include name="loginDependencyDemo"/>
-          <include name="logout"/>
         </methods>
       </class> <!-- tests.DashboardTests -->
-      <class name="tests.LoginTests">
-        <methods>
-          <include name="tearDown"/>
-          <include name="launch"/>
-          <include name="testInvalidLogin" invocation-numbers="0 1 2"/>
-          <include name="testLogin"/>
-        </methods>
-      </class> <!-- tests.LoginTests -->
-      <class name="tests.PIMTests">
-        <methods>
-          <include name="tearDown"/>
-          <include name="AddEmp"/>
-          <include name="launch"/>
-        </methods>
-      </class> <!-- tests.PIMTests -->
     </classes>
   </test> <!-- LogTests(failed) -->
 </suite> <!-- Failed suite [orangeHRM] -->

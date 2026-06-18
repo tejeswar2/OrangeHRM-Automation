@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">OrangeHRM Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 18, 2026 09:34:43 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jun 18, 2026 10:34:28 pm</span></a>
 </li>
 </ul>
 </div>
@@ -71,6 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
@@ -80,25 +81,25 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testInvalidLogin</p>
             <p class="text-sm">
-              <span>9:34:53 pm</span> / <span>00:00:00:110</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:34:43 pm</span> / <span>00:00:05:184</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testInvalidLogin</h5>
-<span class='badge badge-success'>06.18.2026 9:34:53 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:34:53 pm</span>
-<span class='badge badge-default'>00:00:00:110</span>
+<h5 class="test-status text-pass">testInvalidLogin</h5>
+<span class='badge badge-success'>06.18.2026 10:34:43 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:34:48 pm</span>
+<span class='badge badge-default'>00:00:05:184</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -110,81 +111,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:34:53 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:34:48 pm</td>
         <td>
-          Test failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:34:53 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ee3d7ce3988f1b947add30847042259, findElement {value=//input[@placeholder='Username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64707}, goog:processID: 11344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64707/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ee3d7ce3988f1b947add30847042259
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
-	at pages.LoginPage.enterUsername(LoginPage.java:23)
-	at tests.LoginTests.testInvalidLogin(LoginTests.java:40)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log warning-bg">Warning</span></td>
-        <td>9:34:53 pm</td>
-        <td>
-          Couldn't capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4ee3d7ce3988f1b947add30847042259, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64707}, goog:processID: 11344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64707/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4ee3d7ce3988f1b947add30847042259
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -192,25 +122,25 @@ Session ID: 4ee3d7ce3988f1b947add30847042259
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="2"
+        <li class="test-item"  status="pass" test-id="2"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testInvalidLogin</p>
             <p class="text-sm">
-              <span>9:34:55 pm</span> / <span>00:00:00:027</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:35:27 pm</span> / <span>00:00:03:783</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testInvalidLogin</h5>
-<span class='badge badge-success'>06.18.2026 9:34:55 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:34:55 pm</span>
-<span class='badge badge-default'>00:00:00:027</span>
+<h5 class="test-status text-pass">testInvalidLogin</h5>
+<span class='badge badge-success'>06.18.2026 10:35:27 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:35:31 pm</span>
+<span class='badge badge-default'>00:00:03:783</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -222,81 +152,10 @@ Session ID: 4ee3d7ce3988f1b947add30847042259
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:34:55 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:35:31 pm</td>
         <td>
-          Test failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:34:55 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7632054408b07347aa253a4d66441831, findElement {value=//input[@placeholder='Username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62531}, goog:processID: 9520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62531/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7632054408b07347aa253a4d66441831
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
-	at pages.LoginPage.enterUsername(LoginPage.java:23)
-	at tests.LoginTests.testInvalidLogin(LoginTests.java:40)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log warning-bg">Warning</span></td>
-        <td>9:34:55 pm</td>
-        <td>
-          Couldn't capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7632054408b07347aa253a4d66441831, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62531}, goog:processID: 9520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62531/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7632054408b07347aa253a4d66441831
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -304,25 +163,25 @@ Session ID: 7632054408b07347aa253a4d66441831
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="3"
+        <li class="test-item"  status="pass" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testInvalidLogin</p>
             <p class="text-sm">
-              <span>9:34:58 pm</span> / <span>00:00:00:024</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:35:44 pm</span> / <span>00:00:03:240</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testInvalidLogin</h5>
-<span class='badge badge-success'>06.18.2026 9:34:58 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:34:58 pm</span>
-<span class='badge badge-default'>00:00:00:024</span>
+<h5 class="test-status text-pass">testInvalidLogin</h5>
+<span class='badge badge-success'>06.18.2026 10:35:44 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:35:48 pm</span>
+<span class='badge badge-default'>00:00:03:240</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -334,81 +193,10 @@ Session ID: 7632054408b07347aa253a4d66441831
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:34:58 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:35:48 pm</td>
         <td>
-          Test failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:34:58 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [26e344bcc45af53afdd32db0a6f91938, findElement {value=//input[@placeholder='Username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65129}, goog:processID: 22764, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65129/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 26e344bcc45af53afdd32db0a6f91938
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
-	at pages.LoginPage.enterUsername(LoginPage.java:23)
-	at tests.LoginTests.testInvalidLogin(LoginTests.java:40)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log warning-bg">Warning</span></td>
-        <td>9:34:58 pm</td>
-        <td>
-          Couldn't capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [26e344bcc45af53afdd32db0a6f91938, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65129}, goog:processID: 22764, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65129/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 26e344bcc45af53afdd32db0a6f91938
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -416,25 +204,25 @@ Session ID: 26e344bcc45af53afdd32db0a6f91938
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="4"
+        <li class="test-item"  status="pass" test-id="4"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testLogin</p>
             <p class="text-sm">
-              <span>9:35:00 pm</span> / <span>00:00:00:020</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:36:00 pm</span> / <span>00:00:05:567</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testLogin</h5>
-<span class='badge badge-success'>06.18.2026 9:35:00 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:35:00 pm</span>
-<span class='badge badge-default'>00:00:00:020</span>
+<h5 class="test-status text-pass">testLogin</h5>
+<span class='badge badge-success'>06.18.2026 10:36:00 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:36:06 pm</span>
+<span class='badge badge-default'>00:00:05:567</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -446,81 +234,10 @@ Session ID: 26e344bcc45af53afdd32db0a6f91938
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:00 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:36:06 pm</td>
         <td>
-          Test failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:00 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5101aa9d6439747af2d3a679634ca001, findElement {value=//input[@placeholder='Username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58806}, goog:processID: 5000, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58806/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5101aa9d6439747af2d3a679634ca001
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
-	at pages.LoginPage.enterUsername(LoginPage.java:23)
-	at tests.LoginTests.testLogin(LoginTests.java:16)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log warning-bg">Warning</span></td>
-        <td>9:35:00 pm</td>
-        <td>
-          Couldn't capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5101aa9d6439747af2d3a679634ca001, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58806}, goog:processID: 5000, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58806/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5101aa9d6439747af2d3a679634ca001
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -528,25 +245,25 @@ Session ID: 5101aa9d6439747af2d3a679634ca001
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="5"
+        <li class="test-item"  status="pass" test-id="5"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">testInfo</p>
             <p class="text-sm">
-              <span>9:35:02 pm</span> / <span>00:00:00:019</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:36:21 pm</span> / <span>00:00:13:334</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">testInfo</h5>
-<span class='badge badge-success'>06.18.2026 9:35:02 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:35:02 pm</span>
-<span class='badge badge-default'>00:00:00:019</span>
+<h5 class="test-status text-pass">testInfo</h5>
+<span class='badge badge-success'>06.18.2026 10:36:21 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:36:34 pm</span>
+<span class='badge badge-default'>00:00:13:334</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -558,81 +275,10 @@ Session ID: 5101aa9d6439747af2d3a679634ca001
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:02 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:36:34 pm</td>
         <td>
-          Test failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:02 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6fcf03508df8ee3b37e6c10b238dcbd9, findElement {value=//input[@placeholder='Username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57667}, goog:processID: 3224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57667/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6fcf03508df8ee3b37e6c10b238dcbd9
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
-	at pages.LoginPage.enterUsername(LoginPage.java:23)
-	at tests.DashboardTests.testInfo(DashboardTests.java:17)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log warning-bg">Warning</span></td>
-        <td>9:35:02 pm</td>
-        <td>
-          Couldn't capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6fcf03508df8ee3b37e6c10b238dcbd9, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57667}, goog:processID: 3224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57667/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 6fcf03508df8ee3b37e6c10b238dcbd9
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -640,25 +286,25 @@ Session ID: 6fcf03508df8ee3b37e6c10b238dcbd9
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="6"
+        <li class="test-item"  status="pass" test-id="6"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">logout</p>
             <p class="text-sm">
-              <span>9:35:04 pm</span> / <span>00:00:00:020</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:36:47 pm</span> / <span>00:00:08:433</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">logout</h5>
-<span class='badge badge-success'>06.18.2026 9:35:04 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:35:04 pm</span>
-<span class='badge badge-default'>00:00:00:020</span>
+<h5 class="test-status text-pass">logout</h5>
+<span class='badge badge-success'>06.18.2026 10:36:47 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:36:56 pm</span>
+<span class='badge badge-default'>00:00:08:433</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -670,81 +316,10 @@ Session ID: 6fcf03508df8ee3b37e6c10b238dcbd9
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:04 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:36:56 pm</td>
         <td>
-          Test failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:04 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [812596d3de6880a9781561352b89d48a, findElement {value=//input[@placeholder='Username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53677}, goog:processID: 7352, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53677/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 812596d3de6880a9781561352b89d48a
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
-	at pages.LoginPage.enterUsername(LoginPage.java:23)
-	at tests.DashboardTests.logout(DashboardTests.java:34)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log warning-bg">Warning</span></td>
-        <td>9:35:04 pm</td>
-        <td>
-          Couldn't capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [812596d3de6880a9781561352b89d48a, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53677}, goog:processID: 7352, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53677/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 812596d3de6880a9781561352b89d48a
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -759,7 +334,7 @@ Session ID: 812596d3de6880a9781561352b89d48a
           <div class="test-detail">
             <p class="name">loginDependencyDemo</p>
             <p class="text-sm">
-              <span>9:35:06 pm</span> / <span>00:00:00:020</span>
+              <span>10:37:08 pm</span> / <span>00:00:04:777</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -768,52 +343,41 @@ Session ID: 812596d3de6880a9781561352b89d48a
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">loginDependencyDemo</h5>
-<span class='badge badge-success'>06.18.2026 9:35:06 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:35:06 pm</span>
-<span class='badge badge-default'>00:00:00:020</span>
+<span class='badge badge-success'>06.18.2026 10:37:08 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:37:13 pm</span>
+<span class='badge badge-default'>00:00:04:777</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
 </div>
-</div><div class="detail-body mt-4">
+</div>    <div class="row mb-3"><div class="col-md-3">
+        <a href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAB4AAAANKCAIAAADk/MRQAAAQAElEQVR4nOzYsQ3AIBAAsVeU/beFhoYluM4ew/9eZwAAAAAA4LVvAAAAAAAgIKABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIBmAAAAAAAKAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoOoEO5QAACZxJREFUAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEgIaAAAAAICEgAYAAAAAICGgAQAAAABICGgAAAAAABICGgAAAACAhIAGAAAAACAhoAEAAAAASAhoAAAAAAASAhoAAAAAgISABgAAAAAgIaABAAAAAEgIaAAAAAAAEhcAAP//5lz+jwAAAAZJREFUAwB9ygl9THm2cQAAAABJRU5ErkJggg==" data-featherlight="image"><span class="badge badge-gradient-primary">base64 img</span></a>
+        <div class="title">Failure screenshot</div>
+    </div></div>
+<div class="detail-body mt-4">
 <table class="table table-sm">
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:06 pm</td>
+        <td>10:37:10 pm</td>
         <td>
           Test failed
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:06 pm</td>
+        <td>10:37:10 pm</td>
         <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3a7f57582b605852f3483943d4a71183, findElement {value=//input[@placeholder='Username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51435}, goog:processID: 20596, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51435/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a7f57582b605852f3483943d4a71183
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
-	at pages.LoginPage.enterUsername(LoginPage.java:23)
-	at tests.DashboardTests.loginDependencyDemo(DashboardTests.java:49)
+          <textarea readonly class="code-block">java.lang.AssertionError: Login failed due to invalid credentials expected [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at tests.DashboardTests.loginDependencyDemo(DashboardTests.java:53)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -844,21 +408,6 @@ Session ID: 3a7f57582b605852f3483943d4a71183
           
         </td>
       </tr>
-      <tr class="event-row">
-        <td><span class="badge log warning-bg">Warning</span></td>
-        <td>9:35:06 pm</td>
-        <td>
-          Couldn't capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3a7f57582b605852f3483943d4a71183, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51435}, goog:processID: 20596, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51435/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3a7f57582b605852f3483943d4a71183
-        </td>
-      </tr>
   </tbody>
 </table>
 </div>
@@ -871,7 +420,7 @@ Session ID: 3a7f57582b605852f3483943d4a71183
           <div class="test-detail">
             <p class="name">dashboardDependencyDemo</p>
             <p class="text-sm">
-              <span>9:35:07 pm</span> / <span>00:00:00:002</span>
+              <span>10:37:13 pm</span> / <span>00:00:00:003</span>
               <span class="badge skip-bg log float-right">Skip</span>
             </p>
           </div>
@@ -880,9 +429,9 @@ Session ID: 3a7f57582b605852f3483943d4a71183
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-skip">dashboardDependencyDemo</h5>
-<span class='badge badge-success'>06.18.2026 9:35:07 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:35:07 pm</span>
-<span class='badge badge-default'>00:00:00:002</span>
+<span class='badge badge-success'>06.18.2026 10:37:13 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:37:13 pm</span>
+<span class='badge badge-default'>00:00:00:003</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -895,14 +444,14 @@ Session ID: 3a7f57582b605852f3483943d4a71183
   <tbody>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>9:35:07 pm</td>
+        <td>10:37:13 pm</td>
         <td>
           Test skipped
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log skip-bg">Skip</span></td>
-        <td>9:35:07 pm</td>
+        <td>10:37:13 pm</td>
         <td>
           <textarea readonly class="code-block">java.lang.Throwable: Method tests.DashboardTests.dashboardDependencyDemo() on instance tests.DashboardTests@7c729a55 depends on not successfully finished methods 
 [tests.DashboardTests.loginDependencyDemo() on instance tests.DashboardTests@7c729a55]
@@ -934,25 +483,25 @@ Session ID: 3a7f57582b605852f3483943d4a71183
 </div>
           </div>
         </li>
-        <li class="test-item"  status="fail" test-id="9"
+        <li class="test-item"  status="pass" test-id="9"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">AddEmp</p>
             <p class="text-sm">
-              <span>9:35:09 pm</span> / <span>00:00:00:016</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>10:37:27 pm</span> / <span>00:00:15:533</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">AddEmp</h5>
-<span class='badge badge-success'>06.18.2026 9:35:09 pm</span>
-<span class='badge badge-danger'>06.18.2026 9:35:09 pm</span>
-<span class='badge badge-default'>00:00:00:016</span>
+<h5 class="test-status text-pass">AddEmp</h5>
+<span class='badge badge-success'>06.18.2026 10:37:27 pm</span>
+<span class='badge badge-danger'>06.18.2026 10:37:42 pm</span>
+<span class='badge badge-default'>00:00:15:533</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -964,81 +513,10 @@ Session ID: 3a7f57582b605852f3483943d4a71183
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:09 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>10:37:42 pm</td>
         <td>
-          Test failed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log fail-bg">Fail</span></td>
-        <td>9:35:09 pm</td>
-        <td>
-          <textarea readonly class="code-block">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [47d6cf94d1181e1e4972f8682961acaa, findElement {value=//input[@placeholder='Username'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63120}, goog:processID: 3264, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63120/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 47d6cf94d1181e1e4972f8682961acaa
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
-	at pages.LoginPage.enterUsername(LoginPage.java:23)
-	at tests.PIMTests.AddEmp(PIMTests.java:16)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</textarea>
-          
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log warning-bg">Warning</span></td>
-        <td>9:35:09 pm</td>
-        <td>
-          Couldn't capture screenshot: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=149.0.7827.115)
-Build info: version: '4.44.0', revision: 'da2039b'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '26'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [47d6cf94d1181e1e4972f8682961acaa, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63120}, goog:processID: 3264, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63120/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 47d6cf94d1181e1e4972f8682961acaa
+          Test passed
         </td>
       </tr>
   </tbody>
@@ -1066,15 +544,15 @@ Session ID: 47d6cf94d1181e1e4972f8682961acaa
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>8</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">org.openqa.selenium.NoSuchWindowException</p>
-<p class="duration text-sm">8 tests</p>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>org.openqa.selenium.NoSuchWindowException</h4>
-<span status="fail" class='badge log badge-danger'>8 failed</span>
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -1087,58 +565,9 @@ Session ID: 47d6cf94d1181e1e4972f8682961acaa
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>21:34:53 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='1'>testInvalidLogin</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:34:55 pm</td>
-<td>
-<a href="#" class="linked" test-id='2' id='2'>testInvalidLogin</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:34:58 pm</td>
-<td>
-<a href="#" class="linked" test-id='3' id='3'>testInvalidLogin</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:35:00 pm</td>
-<td>
-<a href="#" class="linked" test-id='4' id='4'>testLogin</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:35:02 pm</td>
-<td>
-<a href="#" class="linked" test-id='5' id='5'>testInfo</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:35:04 pm</td>
-<td>
-<a href="#" class="linked" test-id='6' id='6'>logout</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:35:06 pm</td>
+<td>22:37:08 pm</td>
 <td>
 <a href="#" class="linked" test-id='7' id='7'>loginDependencyDemo</a>
-</td>
-</tr>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>21:35:09 pm</td>
-<td>
-<a href="#" class="linked" test-id='9' id='9'>AddEmp</a>
 </td>
 </tr>
 </tbody>
@@ -1169,7 +598,7 @@ Session ID: 47d6cf94d1181e1e4972f8682961acaa
 <tbody>
 <tr class="tag-test-status" status="skip">
 <td><span class="badge log skip-bg">Skip</span></td>
-<td>21:35:07 pm</td>
+<td>22:37:13 pm</td>
 <td>
 <a href="#" class="linked" test-id='8' id='8'>dashboardDependencyDemo</a>
 </td>
@@ -1191,25 +620,25 @@ Session ID: 47d6cf94d1181e1e4972f8682961acaa
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 18, 2026 09:34:43 pm</h3>
+<h3>Jun 18, 2026 10:34:28 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 18, 2026 09:35:10 pm</h3>
+<h3>Jun 18, 2026 10:37:43 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>7</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>8</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -1225,12 +654,12 @@ Session ID: 47d6cf94d1181e1e4972f8682961acaa
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='77%'>
+<b>7</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='88%'><b>8</b> tests failed,
+<small data-tooltip='11%'><b>1</b> tests failed,
 <b>1</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1248,10 +677,10 @@ Session ID: 47d6cf94d1181e1e4972f8682961acaa
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='63%'><b>7</b> events passed</small></div>
 <div>
-<small data-tooltip='61%'><b>16</b> events failed,
-<b data-tooltip='%'>10</b> others
+<small data-tooltip='18%'><b>2</b> events failed,
+<b data-tooltip='%'>2</b> others
 </small>
 </div>
 </div>
@@ -1267,7 +696,7 @@ Session ID: 47d6cf94d1181e1e4972f8682961acaa
 </div></div>
 <script>
 var timeline = {
-"testInvalidLogin":0.11,"testInvalidLogin":0.027,"testInvalidLogin":0.024,"testLogin":0.02,"testInfo":0.019,"logout":0.02,"loginDependencyDemo":0.02,"dashboardDependencyDemo":0.002,"AddEmp":0.016
+"testInvalidLogin":5.184,"testInvalidLogin":3.783,"testInvalidLogin":3.24,"testLogin":5.567,"testInfo":13.334,"logout":8.433,"loginDependencyDemo":4.777,"dashboardDependencyDemo":0.003,"AddEmp":15.533
 };
 </script>
 <div class="row">
@@ -1298,8 +727,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 8,
+passParent: 7,
+failParent: 1,
 warningParent: 0,
 skipParent: 1,
 childCount: 5,
@@ -1315,9 +744,9 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
-failEvents: 16,
-warningEvents: 8,
+passEvents: 7,
+failEvents: 2,
+warningEvents: 0,
 skipEvents: 2,
 infoEvents: 0
 };

@@ -1,5 +1,9 @@
 package tests;
 
+import java.time.Duration;
+
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -38,8 +42,14 @@ public class DashboardTests extends LaunchBase{
 		DashboardPage dp = new DashboardPage(d);
 		dp.Drpdwn();
 		dp.loggigout();
+	
+		  WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(10));
+		    wait.until(ExpectedConditions.urlToBe(
+		        "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"));
+		    
+		    Assert.assertEquals(d.getCurrentUrl(), 
+		        "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 		
-		Assert.assertEquals(d.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 	
 	@Test(priority = 3)
