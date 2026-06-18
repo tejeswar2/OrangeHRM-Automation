@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">orangeHRM</th></tr>
+<tr><td><a href="#t0">LogTests</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">8</td><td class="num">26,143</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">orangeHRM</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LogTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">tests.DashboardTests</td><td><a href="#m0">loginDependencyDemo</a></td><td rowspan="1">1781798706921</td><td rowspan="1">9</td></tr><tr class="failedeven"><td><a href="#m1">logout</a></td><td rowspan="1">1781798704699</td><td rowspan="1">9</td></tr><tr class="failedeven"><td><a href="#m2">testInfo</a></td><td rowspan="1">1781798702590</td><td rowspan="1">9</td></tr><tr class="failedodd"><td rowspan="4">tests.LoginTests</td><td><a href="#m3">testInvalidLogin</a></td><td rowspan="3">1781798698108</td><td rowspan="3">8</td></tr><tr class="failedodd"><td><a href="#m4">testInvalidLogin</a></td></tr><tr class="failedodd"><td><a href="#m5">testInvalidLogin</a></td></tr><tr class="failedodd"><td><a href="#m6">testLogin</a></td><td rowspan="1">1781798700264</td><td rowspan="1">8</td></tr><tr class="failedeven"><td rowspan="1">tests.PIMTests</td><td><a href="#m7">AddEmp</a></td><td rowspan="1">1781798709760</td><td rowspan="1">7</td></tr><tr><th colspan="4">LogTests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.DashboardTests</td><td><a href="#m8">dashboardDependencyDemo</a></td><td rowspan="1">1781798707128</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>LogTests</h2><h3 id="m0">tests.DashboardTests#loginDependencyDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.115)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a7f57582b605852f3483943d4a71183, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51435}, goog:processID: 20596, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51435/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a7f57582b605852f3483943d4a71183
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.DashboardTests.loginDependencyDemo(DashboardTests.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.DashboardTests#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.115)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [812596d3de6880a9781561352b89d48a, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53677}, goog:processID: 7352, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53677/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 812596d3de6880a9781561352b89d48a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.DashboardTests.logout(DashboardTests.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.DashboardTests#testInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.115)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6fcf03508df8ee3b37e6c10b238dcbd9, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57667}, goog:processID: 3224, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57667/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6fcf03508df8ee3b37e6c10b238dcbd9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.DashboardTests.testInfo(DashboardTests.java:17)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginTests#testInvalidLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Adman</td><td>admin123</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.115)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [26e344bcc45af53afdd32db0a6f91938, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65129}, goog:processID: 22764, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65129/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 26e344bcc45af53afdd32db0a6f91938
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.LoginTests.testInvalidLogin(LoginTests.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTests#testInvalidLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admam</td><td>admin124</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.115)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4ee3d7ce3988f1b947add30847042259, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64707}, goog:processID: 11344, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64707/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4ee3d7ce3988f1b947add30847042259
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.LoginTests.testInvalidLogin(LoginTests.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.LoginTests#testInvalidLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Admin</td><td>admin134</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.115)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [7632054408b07347aa253a4d66441831, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62531}, goog:processID: 9520, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62531/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7632054408b07347aa253a4d66441831
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.LoginTests.testInvalidLogin(LoginTests.java:40)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.LoginTests#testLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.115)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [5101aa9d6439747af2d3a679634ca001, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58806}, goog:processID: 5000, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58806/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 5101aa9d6439747af2d3a679634ca001
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.LoginTests.testLogin(LoginTests.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.PIMTests#AddEmp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=149.0.7827.115)
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [47d6cf94d1181e1e4972f8682961acaa, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 149.0.7827.115, chrome: {chromedriverVersion: 149.0.7827.155 (07b52360cc1..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63120}, goog:processID: 3264, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63120/devtoo..., se:cdpVersion: 149.0.7827.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 47d6cf94d1181e1e4972f8682961acaa
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.PIMTests.AddEmp(PIMTests.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.DashboardTests#dashboardDependencyDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.DashboardTests.dashboardDependencyDemo() on instance tests.DashboardTests@7c729a55 depends on not successfully finished methods 
+[tests.DashboardTests.loginDependencyDemo() on instance tests.DashboardTests@7c729a55]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
