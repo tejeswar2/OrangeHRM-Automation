@@ -4,7 +4,9 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 
@@ -16,7 +18,7 @@ public class LaunchBase {
 
 	public WebDriver d;
 	
-	@BeforeMethod
+	@BeforeClass
 	public void launch() {
 		d = new ChromeDriver();
 		   d.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
@@ -24,7 +26,7 @@ public class LaunchBase {
 		d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 	
-	@AfterMethod
+	@AfterClass
 	public void tearDown() {
 		if(d!=null) {
 			d.quit();

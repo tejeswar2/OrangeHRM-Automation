@@ -8,6 +8,7 @@
           <include name="dashboardDependencyDemo"/>
           <include name="tearDown"/>
           <include name="launch"/>
+          <include name="logout"/>
           <include name="loginDependencyDemo"/>
         </methods>
       </class> <!-- tests.DashboardTests -->

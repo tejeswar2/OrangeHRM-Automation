@@ -9,19 +9,62 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">orangeHRM</th></tr>
-<tr><td><a href="#t0">LogTests</a></td><td class="num">7</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">1</td><td class="num">194,414</td><td></td><td></td></tr>
+<tr><td><a href="#t0">LogTests</a></td><td class="num">6</td><td class="num attn">1</td><td class="num">0</td><td class="num attn">2</td><td class="num">157,267</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">orangeHRM</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LogTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.DashboardTests</td><td><a href="#m0">loginDependencyDemo</a></td><td rowspan="1">1781802428886</td><td rowspan="1">1162</td></tr><tr><th colspan="4">LogTests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.DashboardTests</td><td><a href="#m1">dashboardDependencyDemo</a></td><td rowspan="1">1781802433890</td><td rowspan="1">0</td></tr><tr><th colspan="4">LogTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">tests.DashboardTests</td><td><a href="#m2">logout</a></td><td rowspan="1">1781802407800</td><td rowspan="1">8433</td></tr><tr class="passedeven"><td><a href="#m3">testInfo</a></td><td rowspan="1">1781802381089</td><td rowspan="1">13323</td></tr><tr class="passedodd"><td rowspan="4">tests.LoginTests</td><td><a href="#m4">testInvalidLogin</a></td><td rowspan="3">1781802283161</td><td rowspan="3">5179</td></tr><tr class="passedodd"><td><a href="#m5">testInvalidLogin</a></td></tr><tr class="passedodd"><td><a href="#m6">testInvalidLogin</a></td></tr><tr class="passedodd"><td><a href="#m7">testLogin</a></td><td rowspan="1">1781802360892</td><td rowspan="1">5567</td></tr><tr class="passedeven"><td rowspan="1">tests.PIMTests</td><td><a href="#m8">AddEmp</a></td><td rowspan="1">1781802447138</td><td rowspan="1">15530</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">orangeHRM</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LogTests &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">tests.DashboardTests</td><td><a href="#m0">loginDependencyDemo</a></td><td rowspan="1">1790922115532</td><td rowspan="1">45018</td></tr><tr class="failedeven"><td><a href="#m1">logout</a></td><td rowspan="1">1790922070279</td><td rowspan="1">45075</td></tr><tr><th colspan="4">LogTests &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">tests.DashboardTests</td><td><a href="#m2">dashboardDependencyDemo</a></td><td rowspan="1">1790922160703</td><td rowspan="1">0</td></tr><tr><th colspan="4">LogTests &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">tests.DashboardTests</td><td><a href="#m3">testInfo</a></td><td rowspan="1">1790922064041</td><td rowspan="1">6233</td></tr><tr class="passedodd"><td rowspan="4">tests.LoginTests</td><td><a href="#m4">testInvalidLogin</a></td><td rowspan="3">1790922041300</td><td rowspan="3">3324</td></tr><tr class="passedodd"><td><a href="#m5">testInvalidLogin</a></td></tr><tr class="passedodd"><td><a href="#m6">testInvalidLogin</a></td></tr><tr class="passedodd"><td><a href="#m7">testLogin</a></td><td rowspan="1">1790922048856</td><td rowspan="1">2655</td></tr><tr class="passedeven"><td rowspan="1">tests.PIMTests</td><td><a href="#m8">AddEmp</a></td><td rowspan="1">1790922168200</td><td rowspan="1">12702</td></tr></tbody>
 </table>
-<h2>LogTests</h2><h3 id="m0">tests.DashboardTests#loginDependencyDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login failed due to invalid credentials expected [https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index] but found [https://opensource-demo.orangehrmlive.com/web/index.php/auth/login]
-	at tests.DashboardTests.loginDependencyDemo(DashboardTests.java:53)
+<h2>LogTests</h2><h3 id="m0">tests.DashboardTests#loginDependencyDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Username&apos;]&quot;}
+  (Session info: chrome=154.0.8037.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c002d87f917968da8185ea4d188029a8, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.92, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61521}, goog:processID: 17620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61521/devtoo..., se:cdpVersion: 154.0.8037.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c002d87f917968da8185ea4d188029a8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.DashboardTests.loginDependencyDemo(DashboardTests.java:59)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
-... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.DashboardTests#dashboardDependencyDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.DashboardTests.dashboardDependencyDemo() on instance tests.DashboardTests@7c729a55 depends on not successfully finished methods 
-[tests.DashboardTests.loginDependencyDemo() on instance tests.DashboardTests@7c729a55]
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.DashboardTests#logout</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@placeholder=&apos;Username&apos;]&quot;}
+  (Session info: chrome=154.0.8037.92)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.44.0&apos;, revision: &apos;da2039b&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;26&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c002d87f917968da8185ea4d188029a8, findElement {value=//input[@placeholder=&apos;Username&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 154.0.8037.92, chrome: {chromedriverVersion: 154.0.8037.92 (334b65d254cc..., userDataDir: C:\Users\TEJESW~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61521}, goog:processID: 17620, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61521/devtoo..., se:cdpVersion: 154.0.8037.92, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c002d87f917968da8185ea4d188029a8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:224)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:415)
+	at pages.LoginPage.enterUsername(LoginPage.java:23)
+	at tests.DashboardTests.logout(DashboardTests.java:38)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.DashboardTests#dashboardDependencyDemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method tests.DashboardTests.dashboardDependencyDemo() on instance tests.DashboardTests@3bb9a3ff depends on not successfully finished methods 
+[tests.DashboardTests.loginDependencyDemo() on instance tests.DashboardTests@3bb9a3ff]
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1612)
 ... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.DashboardTests#logout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m3">tests.DashboardTests#testInfo</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m4">tests.LoginTests#testInvalidLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>admam</td><td>admin124</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 <h3 id="m5">tests.LoginTests#testInvalidLogin</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>Adman</td><td>admin123</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
