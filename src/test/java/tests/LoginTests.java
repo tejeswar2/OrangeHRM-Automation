@@ -9,7 +9,7 @@ import base.LaunchBase;
 import pages.LoginPage;
 
 public class LoginTests extends LaunchBase  {
-	//testing the jenkins pipeline
+	//testing the jenkins pipelineee
 	@Test
 	public void testLogin() {
 		LoginPage lp = new LoginPage(d);
