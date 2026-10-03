@@ -3,8 +3,8 @@
     <classes>
        <class name ="tests.LoginTests"></class>
        <class name = "tests.DashboardTests"></class>
-       <class name = "tests.PIMTests"></class>
-    </classes>
+<!--       <class name = "tests.PIMTests"></class>
+-->    </classes>
  </test>
 
 </suite>

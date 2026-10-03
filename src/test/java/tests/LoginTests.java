@@ -18,7 +18,7 @@ public class LoginTests extends LaunchBase  {
 		lp.LoginB();
 		
 		Assert.assertEquals(d.getCurrentUrl(), "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
-
+    		
 	}
 
 	

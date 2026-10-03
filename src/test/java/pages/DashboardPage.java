@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -25,18 +26,23 @@ public class DashboardPage {
 	}
 	
 	public void Drpdwn() {
-		d.findElement(drpdwn).click();
-	}
-	
-	
-	public void loggigout() {
-		d.findElement(logout).click();
+	    WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.elementToBeClickable(drpdwn)).click();
 	}
 
+	public void loggigout() {
+	    WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.elementToBeClickable(logout)).click();
+	}
+	
 	public String empName() {
-		WebDriverWait wait = new WebDriverWait(d,Duration.ofSeconds(10));
-		wait.until(ExpectedConditions.attributeToBeNotEmpty(d.findElement(empN), "value"));
-		return d.findElement(empN).getAttribute("value");
+	    WebDriverWait wait = new WebDriverWait(d, Duration.ofSeconds(10));
+
+	    WebElement element = d.findElement(empN);
+
+	    wait.until(ExpectedConditions.attributeToBeNotEmpty(element, "value"));
+
+	    return element.getAttribute("value");
 	}
 	
 }

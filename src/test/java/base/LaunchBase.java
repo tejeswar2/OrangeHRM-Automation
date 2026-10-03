@@ -18,17 +18,17 @@ public class LaunchBase {
 
 	public WebDriver d;
 	
-	@BeforeClass
+	@BeforeMethod
 	public void launch() {
 		d = new ChromeDriver();
-		   d.manage().timeouts().implicitlyWait(Duration.ofSeconds(45));
+		   d.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		    d.manage().window().maximize();
 		d.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
 	}
 	
-	@AfterClass
+	@AfterMethod
 	public void tearDown() {
-		if(d!=null) {
+		if(d != null) {
 			d.quit();
 		}
 	}
